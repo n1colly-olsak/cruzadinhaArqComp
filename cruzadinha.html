@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinha</title>
+
+    <link rel="stylesheet" href="cruzadinha.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>NICOLLY´S VERY BASIC CRUZADINHA</h1>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="perguntas">
+            <p>1. Unidade central responsável pelo processamento do computador.</p>
+            <input id="ipt_resposta1" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>2. Parte do processador que executa operações lógicas e matemáticas.</p>
+            <input id="ipt_resposta2" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>3. Pequenas áreas de armazenamento extremamente rápidas dentro da CPU.</p>
+            <input id="ipt_resposta3" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>4. Memória principal temporária usada durante a execução dos programas.</p>
+            <input id="ipt_resposta4" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>5. Memória somente leitura gravada de forma permanente.</p>
+            <input id="ipt_resposta5" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>6. Tipo de memória apagável por luz ultravioleta e regravável.</p>
+            <input id="ipt_resposta6" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>7. Tipo de memória regravável encontrada em pendrives, SSDs e cartões.</p>
+            <input id="ipt_resposta7" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>8. Memória de armazenamento permanente como HD ou SSD.</p>
+            <input id="ipt_resposta8" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>9. Técnica que permite que dispositivos acessem a memória sem envolver diretamente a CPU.</p>
+            <input id="ipt_resposta9" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>10. Sinal usado para habilitar ou selecionar um chip específico em um circuito.</p>
+            <input id="ipt_resposta10" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>11. Conjunto de linhas usado para indicar o endereço na memória ou dispositivo.</p>
+            <input id="ipt_resposta11" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>12. Conjunto de linhas responsáveis pela transferência dos dados no sistema.</p>
+            <input id="ipt_resposta12" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>13. Processador Intel, lançado em 2009, com 4 a 6 núcleos. </p>
+            <input id="ipt_resposta13" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>14. Processador Intel,  lançado em 2008, com 4 a 8 núcleos.</p>
+            <input id="ipt_resposta14" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>15. Processador que contém dois núcleos físicos.</p>
+            <input id="ipt_resposta15" type="text">
+            <button onclick="verificar()">verificar</button>
+
+            <p>16. Processador que contém quatro núcleos físicos.</p>
+            <input id="ipt_resposta16" type="text">
+            <button onclick="verificar()">verificar</button>
+            
+        </div>
+
+        <table class="palavrasCruzadas">
+
+            <!-- Linha 1 -->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li1_3"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li1_5"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--Linha 2 -->
+            <tr>
+                <td class="quadrado" id="Li2_1"></td>
+                <td class="quadrado" id="Li2_2"></td>
+                <td class="quadrado" id="Li_3"></td>
+                <td class="quadrado" id="Li2_4"></td>
+                <td class="quadrado" id="Li2_5"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--Linha 3 -->
+            <tr>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li3_1"></td>
+                <td class="quadrado" id="Li3_2"></td>
+                <td class="quadrado" id="Li3_3"></td>
+                <td class="quadrado" id="Li3_4"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 4 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li4_2"></td>
+                <td class="quadrado" id="Li4_3"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li4_5"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li4_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 5 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li5_2"></td>
+                <td class="quadrado" id="Li5_3"></td> <!--ESPAÇO-->
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li5_5"></td> <!--ESPAÇO-->
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li5_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 6 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li6_3"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li6_5"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li6_14"></td>
+                <td class="quadrado" id="Li6_15"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 7 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li7_3"></td>
+                <td class="quadrado" id="Li7_4"></td>
+                <td class="quadrado" id="Li7_5"></td>
+                <td class="quadrado" id="Li7_6"></td>
+                <td class="quadrado" id="Li7_7"></td>
+                <td class="quadrado" id="Li7_8"></td> <!--ESPAÇO-->
+                <td class="quadrado" id="Li7_9"></td>
+                <td class="quadrado" id="Li7_10"></td>
+                <td class="quadrado" id="Li7_11"></td>
+                <td class="quadrado" id="Li7_12"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li7_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 8 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li8_3"></td>
+                <td class="quadrado" id="Li8_4"></td>
+                <td class="quadrado" id="Li8_5"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li8_14"></td> <!--ESPAÇO-->
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 9 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li9_3"></td>
+                <td class="quadrado" id="Li9_4"></td>
+                <td class="quadrado" id="Li9_5"></td>
+                <td class="quadrado" id="Li9_6"></td>
+                <td class="quadrado" id="Li9_7"></td>
+                <td class="quadrado" id="Li9_8"></td>
+                <td class="quadrado" id="Li9_9"></td>
+                <td class="quadrado" id="Li9_10"></td>
+                <td class="quadrado" id="Li9_11"></td> <!--ESPAÇO-->
+                <td class="quadrado" id="Li9_12"></td>
+                <td class="quadrado" id="Li9_13"></td>
+                <td class="quadrado" id="Li9_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 10 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li10_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 11 _-->
+            <tr> 
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li11_13"></td>
+                <td class="quadrado" id="Li11_14"></td>
+                <td class="quadrado" id="Li11_15"></td>
+                <td class="quadrado" id="Li11_16"></td>
+                <td class="quadrado" id="Li11_17"></td>
+            </tr>
+
+            <!--_ Linha 12 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li12_3"></td>
+                <td class="quadrado" id="Li12_4"></td>
+                <td class="quadrado" id="Li12_5"></td>
+                <td class="quadrado" id="Li12_6"></td>
+                <td class="quadrado" id="Li12_7"></td>
+                <td class="quadrado" id="Li12_8"></td>
+                <td class="quadrado" id="Li12_9"></td>
+                <td class="quadrado" id="Li12_10"></td>
+                <td class="quadrado" id="Li12_11"></td>
+                <td class="quadrado" id="Li12_12"></td>
+                <td class="quadrado" id="Li12_13"></td>
+                <td class="quadrado" id="Li12_14"></td>
+                <td class="quadrado" id="Li12_15"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 13 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li13_4"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li13_6"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li13_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 14 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li14_4"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li14_14"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 15 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li15_4"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+                <td class="vazio"></td>
+            </tr>
+
+            <!--_ Linha 16 _-->
+            <tr>
+                <td class="vazio"></td>
+                <td class="quadrado" id="Li16_2"></td>
+                <td class="quadrado" id="Li16_3"></td>
+                <td class="quadrado" id="Li16_4"></td>
+                <td class="quadrado" id="Li16_5"></td>
+                <td class="quadrado" id="Li16_6"></td>
+                <td class="quadrado" id="Li16_7"></td>
+                <td class="quadrado" id="Li16_8"></td> 
+                <td class="quadrado" id="Li16_9"></td> <!--ESPAÇO-->
+                <td class="quadrado" id="Li16_10"></td>
+                <td class="quadrado" id="Li16_11"></td> 
+                <td class="quadrado" id="Li16_12"></td> <!--ESPAÇO-->
+                <td class="quadrado" id="Li16_13"></td>
+                <td class="quadrado" id="Li16_14"></td>
+                <td class="quadrado" id="Li16_15"></td>
+                <td class="quadrado" id="Li16_16"></td>
+                <td class="quadrado" id="Li16_17"></td>
+            </tr>
+
+        </table>
+    </main>
+
+    <div class="footer">
+
+        <div class="div_conteudo">
+            <p>Nicolly de Souza Olsak - 1 adsA - 2025</p>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script>
+
+    function verificar(){
+
+        var resposta1 = ipt_resposta1.value.toUpperCase();
+        var resposta2 = ipt_resposta2.value.toUpperCase();
+        var resposta3 = ipt_resposta3.value.toUpperCase();
+        var resposta4 = ipt_resposta4.value.toUpperCase();
+        var resposta5 = ipt_resposta5.value.toUpperCase();
+        var resposta6 = ipt_resposta6.value.toUpperCase();
+        var resposta7 = ipt_resposta7.value.toUpperCase();
+        var resposta8 = ipt_resposta8.value.toUpperCase();
+        var resposta9 = ipt_resposta9.value.toUpperCase();
+        var resposta10 = ipt_resposta10.value.toUpperCase();
+        var resposta11 = ipt_resposta11.value.toUpperCase();
+        var resposta12 = ipt_resposta12.value.toUpperCase();
+        var resposta13 = ipt_resposta13.value.toUpperCase();
+        var resposta14 = ipt_resposta14.value.toUpperCase();
+        var resposta15 = ipt_resposta15.value.toUpperCase();
+        var resposta16 = ipt_resposta16.value.toUpperCase();
+
+        if (resposta1 == "CPU") {
+            Li2_1.innerHTML = "C";
+            Li2_2.innerHTML = "P";
+            Li_3.innerHTML = "U";
+            resposta1.disabled = true;
+        } 
+
+        if (resposta2 == "ULA") {
+            Li2_4.innerHTML = "L";
+            Li2_5.innerHTML = "A";
+            resposta2.disabled = true;
+        } 
+
+        if (resposta3 == "REGISTRADORES") {
+            Li12_3.innerHTML = "R";
+            Li12_4.innerHTML = "E";
+            Li12_5.innerHTML = "G";
+            Li12_6.innerHTML = "I";
+            Li12_7.innerHTML = "S";
+            Li12_8.innerHTML = "T";
+            Li12_9.innerHTML = "R";
+            Li12_10.innerHTML = "A";
+            Li12_11.innerHTML = "D";
+            Li12_12.innerHTML = "O";
+            Li12_13.innerHTML = "R";
+            Li12_14.innerHTML = "E";
+            Li12_15.innerHTML = "S";
+            resposta3.disabled = true;
+        } 
+
+        if (resposta4 == "RAM") {
+            Li3_1.innerHTML = "R";
+            Li3_2.innerHTML = "A";
+            Li3_3.innerHTML = "M";
+            resposta4.disabled = true;
+        } 
+
+        if (resposta5 == "ROM") {
+            Li4_2.innerHTML = "O";
+            Li5_2.innerHTML = "M";
+            resposta5.disabled = true;
+        } 
+
+         if (resposta6 == "EPROM") {
+            Li12_4.innerHTML = "E";
+            Li13_4.innerHTML = "P";
+            Li14_4.innerHTML = "R";
+            Li15_4.innerHTML = "O";
+            Li16_4.innerHTML = "M";
+            resposta6.disabled = true;
+        }
+
+        if (resposta7 == "FLASH") {
+            Li11_13.innerHTML = "F";
+            Li11_14.innerHTML = "L";
+            Li11_15.innerHTML = "A";
+            Li11_16.innerHTML = "S";
+            Li11_17.innerHTML = "H";
+            resposta7.disabled = true;
+        }
+
+        if (resposta8 == "MEMORIA DE MASSA" || resposta8 == "MEMÓRIA DE MASSA") {
+            Li16_2.innerHTML = "M";
+            Li16_3.innerHTML = "E";
+            Li16_4.innerHTML = "M";
+            Li16_5.innerHTML = "Ó";
+            Li16_6.innerHTML = "R";
+            Li16_7.innerHTML = "I";
+            Li16_8.innerHTML = "A";
+            Li16_9.innerHTML = " ";
+            Li16_10.innerHTML = "D";
+            Li16_11.innerHTML = "E";
+            Li16_12.innerHTML = " ";
+            Li16_13.innerHTML = "M";
+            Li16_14.innerHTML = "A";
+            Li16_15.innerHTML = "S";
+            Li16_16.innerHTML = "S";
+            Li16_17.innerHTML = "A";
+            resposta8.disabled = true;
+        }
+
+        if (resposta9 == "DMA") {
+            Li7_4.innerHTML = "D";
+            Li8_4.innerHTML = "M";
+            Li9_4.innerHTML = "A";
+            resposta9.disabled = true;
+        }
+
+        if (resposta10 == "CHIP SELECT") {
+            Li4_14.innerHTML = "C";
+            Li5_14.innerHTML = "H";
+            Li6_14.innerHTML = "I";
+            Li7_14.innerHTML = "P";
+            Li8_14.innerHTML = " ";
+            Li9_14.innerHTML = "S";
+            Li10_14.innerHTML = "E";
+            Li11_14.innerHTML = "L";
+            Li12_14.innerHTML = "E";
+            Li13_14.innerHTML = "C";
+            Li14_14.innerHTML = "T";
+            resposta10.disabled = true;
+        }
+
+        if (resposta11 == "ADDRESS BUS") {
+            Li9_4.innerHTML = "A";
+            Li9_5.innerHTML = "D";
+            Li9_6.innerHTML = "D";
+            Li9_7.innerHTML = "R";
+            Li9_8.innerHTML = "E";
+            Li9_9.innerHTML = "S";
+            Li9_10.innerHTML = "S";
+            Li9_11.innerHTML = " ";
+            Li9_12.innerHTML = "B";
+            Li9_13.innerHTML = "U";
+            Li9_14.innerHTML = "S";
+            resposta11.disabled = true;
+        }
+
+        if (resposta12 == "DATA BUS") {
+            Li1_5.innerHTML = "D";
+            Li2_5.innerHTML = "A";
+            Li3_4.innerHTML = "T";
+            Li4_5.innerHTML = "A";
+            Li5_5.innerHTML = " ";
+            Li6_5.innerHTML = "B";
+            Li7_5.innerHTML = "U";
+            Li8_5.innerHTML = "S";
+            resposta12.disabled = true;
+        }
+
+        if (resposta13 == "I5"){
+            Li6_14.innerHTML = "I";
+            Li6_15.innerHTML = "5";
+            resposta13.disabled = true;
+        } 
+
+        if (resposta14 == "I7"){
+            Li12_6.innerHTML = "I";
+            Li13_6.innerHTML = "7";
+            resposta14.disabled = true;
+        }
+
+        if (resposta15 == "DUAL CORE") {
+            Li7_4.innerHTML = "D";
+            Li7_5.innerHTML = "U";
+            Li7_6.innerHTML = "A";
+            Li7_7.innerHTML = "L";
+            Li7_8.innerHTML = " ";
+            Li7_9.innerHTML = "C";
+            Li7_10.innerHTML = "O";
+            Li7_11.innerHTML = "R";
+            Li7_12.innerHTML = "E";
+            resposta15.disabled = true;
+        }
+
+        if (resposta16 == "QUAD CORE") {
+            Li1_3.innerHTML = "Q";
+            Li_3.innerHTML = "U";
+            Li3_2.innerHTML = "A";
+            Li4_3.innerHTML = "D";
+            Li5_3.innerHTML = " ";
+            Li6_3.innerHTML = "C";
+            Li7_3.innerHTML = "O";
+            Li8_3.innerHTML = "R";
+            Li9_3.innerHTML = "E";
+            resposta16.disabled = true;
+        }
+    }
+</script>
+
